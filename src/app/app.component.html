@@ -1,3 +1,10 @@
-<h1>
-  {{title}}
-</h1>
+<app-header></app-header>
+<div class="container"> <div class="row" >
+    <div class="col-md-12">
+   <router-outlet></router-outlet>
+    </div>
+    </div>
+     </div>
+<!--<br>-->
+<!--<app-shopping-list *ngIf="loadedItem==='shoppinglist'"></app-shopping-list><br>
+<app-recipes *ngIf="loadedItem==='recipe'"></app-recipes>-->

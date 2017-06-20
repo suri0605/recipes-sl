@@ -1,0 +1,31 @@
+<div class="row">
+  <div class="col-xs-12">
+    <img style="max-height:200px" [src]="somerandom.imagePath" alt="{{somerandom.name}}" class="img-responsive">
+   
+  </div>
+</div>
+  <div class-="row">
+   <div class="col-xs-12">
+   <h1> {{somerandom.name}} </h1>
+  </div>
+  </div>
+    <div appdropdown class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle">
+        Manage Recipe <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a (click)="Ingaddtoshlst()" style="cursor:pointer;">To Shoping list</a></li>
+        <li> <a style="cursor:pointer">Edit Recipe</a></li>
+        <li><a style="cursor:pointer">Delete Rcpe</a></li>
+   
+     <div class-="row">
+   <div class="col-xs-12">
+   <h1> {{somerandom.description}} </h1>
+  </div>
+  </div>
+  <div class-="row">
+   <div class="col-xs-12">
+  <ul *ngFor="let ingrech of somerandom.ingredients">{{ingrech.name}}--{{ingrech.amount}}</ul>
+  </div>
+    
+  

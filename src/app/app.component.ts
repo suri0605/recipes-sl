@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+  loadedItem="recipe";
+  onNav(Navigation:string){
+    this.loadedItem=Navigation;
+
+  }
 }
